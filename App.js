@@ -33,7 +33,7 @@ const App = () => {
               />
             ),
             headerLeft: () => (
-              <Image style={{ width: 24, height: 24,marginRight:16 }}
+              <Image style={{ width: 24, height: 24,marginLeft:16 }}
                 source={require('./assets/camera.png')}
               />
             ),
