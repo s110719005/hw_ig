@@ -12,6 +12,7 @@
     "@react-navigation/native": "^5.1.2",
     "@react-navigation/stack": "^5.2.4",
     "expo": "^37.0.7",
+    "expo-cli": "^3.17.23",
     "install": "^0.13.0",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",

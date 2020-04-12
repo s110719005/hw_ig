@@ -11,8 +11,7 @@ const AlbumScreen = ({ navigation }) => {
       <View style={styles.headerStyle}>
         <Image style={{ width: 24, height: 24,marginTop:5,marginLeft:16 }}
                   source={require('../../assets/camera.png')}
-                  
-                />
+        />
           <Image style={{ width: 110, height: 35,marginBottom:0,marginRight:0 }}
                   source={require('../../assets/logo.png')}
                 />
@@ -30,10 +29,29 @@ const AlbumScreen = ({ navigation }) => {
       <AlbumDetail 
         album={item}       
         navigation={navigation}
+        
       />}
       keyExtractor={item => item.title}
       />
-    </View>
+
+      <View style={styles.navStyle}>
+        <Image style={{ width: 30, height: 30,marginLeft:30 }}
+                  source={require('../../assets/home.png')}
+        />
+        <Image style={{ width: 30, height: 30}}
+                  source={require('../../assets/search.png')}
+        />
+        <Image style={{ width: 30, height: 30}}
+                  source={require('../../assets/add.png')}
+        />
+        <Image style={{ width: 30, height: 30}}
+                  source={require('../../assets/like.png')}
+        />
+        <Image style={{ width: 30, height: 30,marginRight:30,borderRadius:15 }}
+                  source={require('../../assets/user.png')}
+        />
+      </View>
+  </View>
   );
 };
 
@@ -53,6 +71,14 @@ const styles = StyleSheet.create({
     // Android Only
     elevation: 2
   },
+  navStyle:{
+    flexDirection:"row",
+    height:60,
+    alignItems:"center",
+    justifyContent: "space-between",
+    borderTopWidth:0.5,
+    borderTopColor:"#A3A399",
+  }
   
 });
 
