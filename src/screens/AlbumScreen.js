@@ -9,15 +9,15 @@ const AlbumScreen = ({ navigation }) => {
     
     <View style={{flex: 1}}>
       <View style={styles.headerStyle}>
-        <Image style={{ width: 24, height: 24,marginRight:110,marginLeft:16 }}
+        <Image style={{ width: 24, height: 24,marginTop:5,marginLeft:16 }}
                   source={require('../../assets/camera.png')}
                   
                 />
-          <Image style={{ width: 110, height: 30,marginBottom:5,marginRight:110 }}
+          <Image style={{ width: 110, height: 35,marginBottom:0,marginRight:0 }}
                   source={require('../../assets/logo.png')}
                 />
           <TouchableOpacity onPress={() => navigation.push('Message')}>
-                <Image style={{ width: 24, height: 24,marginRight:16 }}
+                <Image style={{ width: 24, height: 24,marginRight:16,marginTop:5 }}
                   source={require('../../assets/send.png')}
                 />
           </TouchableOpacity>
@@ -42,13 +42,14 @@ const styles = StyleSheet.create({
     display:"flex",
     flexDirection:"row",
     backgroundColor: "#F8F8F8",
-    justifyContent: "flex-start",
-    alignItems: "center",
-    height: 90,
-    paddingTop: 30,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
+    justifyContent: "space-between",
+    height: 80,
+    paddingTop: 40,
+    borderBottomWidth:0.5,
+    borderBottomColor:"#A3A399",
+    //shadowColor: "#000",
+    //shadowOffset: { width: 0, height: 2 },
+    //shadowOpacity: 0.2,
     // Android Only
     elevation: 2
   },
